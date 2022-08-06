@@ -12,8 +12,8 @@ import javax.validation.constraints.Size;
 @Entity // we can make our class as Entity by using @Entity annotation
 public class User {
 
-	@Id
-	@GeneratedValue
+	@Id  // to declare this as a primary key
+	@GeneratedValue // to generate the incremented values automatically for the primary key while persisting data into thwe database
 	private Integer Id;
 	
 	@Size(min=2, message="Name should have at least 2 characters")
